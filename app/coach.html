@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'">
+<title>Screen Coach</title>
+<link rel="stylesheet" href="coach.css">
+</head>
+<body>
+
+<svg id="dim"><path id="dimp" fill="rgba(8,10,14,.7)" fill-rule="evenodd"/></svg>
+<svg id="ink"></svg>
+
+<div id="card" class="folded">
+  <div class="frame">
+    <div class="board">
+      <div class="bar" id="bar" title="Click: open or fold. Drag: move.">
+        <div class="mags"><i class="mag m1"></i><i class="mag m2"></i><i class="mag m3"></i></div>
+        <span class="stage" id="stg">Ready</span>
+        <span class="clock" id="clock"></span>
+        <button class="tool" id="fold" title="Fold the board">–</button>
+        <button class="tool" id="close" title="Close the coach">×</button>
+      </div>
+      <div class="asked">You asked</div>
+      <div class="q" id="q"></div>
+      <ol class="lines" id="lines"></ol>
+      <div class="ask"><input id="in" placeholder="Ask about your screen" autocomplete="off" spellcheck="false"><kbd>Enter</kbd></div>
+      <div class="acts"><button class="btn" id="wipe">Wipe the marks</button><button class="btn" id="again">Draw again</button></div>
+    </div>
+    <div class="tray"><div class="slot" id="slot"></div><div class="link" id="link"><i class="lamp" id="lamp"></i><span class="plate" id="chat">no chat</span></div></div>
+  </div>
+</div>
+
+<!-- the pen: its tip is the origin, its body points to the right -->
+<div id="pen"><svg width="64" height="20" viewBox="-2 -10 64 20">
+  <rect x="15" y="-6.5" width="38" height="13" rx="3.2" fill="#111317"/>
+  <rect x="24" y="-6.5" width="17" height="13" fill="#FFD426"/>
+  <rect x="15" y="-5.2" width="38" height="1.6" rx=".8" fill="rgba(255,255,255,.28)"/>
+  <rect x="52" y="-6" width="6.5" height="12" rx="2" fill="#2B3038"/>
+  <rect x="9" y="-5" width="6.5" height="10" rx="1.2" fill="#2B3038"/>
+  <path d="M0,0 L9.4,-3.5 L9.4,3.5 Z" fill="#FFD426" stroke="#111317" stroke-width="1.3" stroke-linejoin="round"/>
+</svg></div>
+
+<script src="coach.js"></script>
+</body>
+</html>

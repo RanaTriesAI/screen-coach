@@ -1,0 +1,11 @@
+{
+  "name": "screen-coach",
+  "version": "0.1.0",
+  "private": true,
+  "description": "The board of Screen Coach: a see-through window that shows answers from a Claude Code chat.",
+  "main": "main.js",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "44.7.2"
+  }
+}

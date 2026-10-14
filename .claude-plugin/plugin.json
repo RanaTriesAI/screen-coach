@@ -1,0 +1,14 @@
+{
+  "name": "screen-coach",
+  "displayName": "Screen Coach",
+  "version": "0.1.0",
+  "description": "A small whiteboard on your Windows screen. Ask about what you see, and the Claude Code chat you are in answers there and points with marker marks.",
+  "author": {
+    "name": "Rana Tries AI",
+    "url": "https://github.com/RanaTriesAI"
+  },
+  "homepage": "https://github.com/RanaTriesAI/screen-coach",
+  "repository": "https://github.com/RanaTriesAI/screen-coach",
+  "license": "MIT",
+  "keywords": ["screen", "coach", "overlay", "screenshot", "windows", "help"]
+}

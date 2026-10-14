@@ -1,0 +1,14 @@
+{
+  "name": "ranatriesai",
+  "description": "Plugins by Rana Tries AI",
+  "owner": {
+    "name": "Rana Tries AI"
+  },
+  "plugins": [
+    {
+      "name": "screen-coach",
+      "source": "./",
+      "description": "A small whiteboard on your Windows screen. Ask about what you see, and the Claude Code chat you are in answers there and points with marker marks."
+    }
+  ]
+}
