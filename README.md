@@ -54,6 +54,7 @@ The board works like a mail slot. When you send a question, it saves the text an
 - It sees and points on the main screen only.
 - It points. It never clicks or types for you.
 - One chat holds the coach at a time. Say "coach on" in another chat and the coach moves there.
+- Claude Code's permission or safety checks can stop the chat from starting its next wait, for example after a question about publishing something. The chat tells you. Say "go" and it waits again.
 - It has been tested on one Windows 11 PC so far. On other screen setups the marks may land a little off. Please tell us in an issue.
 
 ## Uninstall

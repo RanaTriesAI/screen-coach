@@ -35,9 +35,11 @@ The wake notice names only an output file. N = the `-After` number of the wait t
 **`COACH QUESTION N`**, two rounds:
 
 - Round 1, one message with three calls: read the output file (it holds the question text and the picture size) · Read the screenshot `${CLAUDE_PLUGIN_DATA}/shots/q-NNNN.png` · Write `${CLAUDE_PLUGIN_DATA}/outbox/s-NNNN.json` with the content `{}` (the board then shows "I look at your screen").
-- Round 2, one message with two calls: Write the answer file `${CLAUDE_PLUGIN_DATA}/outbox/a-NNNN.json` (next part) · run the background command again, the same as before but with `-After N`.
+- Round 2, one message with two calls: Write the answer file `${CLAUDE_PLUGIN_DATA}/outbox/a-NNNN.json` (next part) · run the background command again, the same as before but with `-After N`. Describe it as "Wait for the next question from the coach board": it only waits, it changes nothing.
 
 End the turn with the question and the answer in the chat too.
+
+If a permission or safety check stops the background command (it can happen after a question about publishing, deleting or paying), tell the user that this command only waits for their next question, and ask them to say "go". Then run it again.
 
 **Other wakes:**
 - `COACH CLOSED`: the user closed the board. Do not run the background command again.
